@@ -17,4 +17,4 @@ class PaisFormulario(forms.ModelForm):
         fields = ['nombre']
     
     nombre = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
-    
+   
