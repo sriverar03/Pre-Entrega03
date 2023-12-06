@@ -8,3 +8,13 @@ class ClienteFormulario(forms.ModelForm):
     
     nombre = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
     apellido = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+
+
+
+class PaisFormulario(forms.ModelForm):
+    class Meta:
+        model = models.Paises
+        fields = ['nombre']
+    
+    nombre = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+    
