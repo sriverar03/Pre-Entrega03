@@ -11,7 +11,12 @@
   <body>
     {% include "AppCoder/layout/header.html" %}    
     {% block contenidoPrincipal %} 
-        <br>Este es el contenido principal 
+        
+    <div class="row"> 
+      <div class="col-10 mx-auto">
+             <h1>SISTEMA DE VIAJES</h1> 
+      </div>
+    </div>    
     {% endblock %}
 
     <script src="{% static 'bootstrap/js/bootstrap.min.js'  %}"></script>
